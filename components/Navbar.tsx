@@ -46,7 +46,7 @@ export const Navbar = ({
                 alt="logo de reddito"
                 height={120}
                 width={120}
-                className="h-auto w-24 sm:w-32" // Ajuste responsive del logo
+                className="h-auto w-24 sm:w-32"
               />
             </Link>
             <div className="hidden h-6 w-px bg-white/10 md:block"></div>

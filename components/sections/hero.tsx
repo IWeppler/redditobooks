@@ -3,6 +3,7 @@
 import { Dictionary } from "@/lib/types";
 import Spline from "@splinetool/react-spline";
 import { motion, Variants } from "framer-motion";
+import { ArrowRightIcon } from "lucide-react";
 
 const staggerContainer: Variants = {
   hidden: { opacity: 0 },
@@ -28,7 +29,10 @@ const itemFadeUp: Variants = {
 
 export default function HeroSection({ dict }: { dict: Dictionary }) {
   return (
-    <main id="hero" className="grid w-full max-w-7xl min-h-[90dvh] grid-cols-1 items-center gap-8 border-x border-brand-assets py-24 px-8 sm:px-16 lg:grid-cols-2">
+    <main
+      id="hero"
+      className="grid w-full max-w-7xl min-h-[90dvh] grid-cols-1 items-center gap-8 border-x border-brand-assets py-24 px-8 sm:px-16 lg:grid-cols-2"
+    >
       {/* --- COLUMNA IZQUIERDA --- */}
       <motion.div
         className="flex w-full flex-col items-center text-center lg:items-start lg:text-left"
@@ -56,11 +60,15 @@ export default function HeroSection({ dict }: { dict: Dictionary }) {
 
         <motion.a
           href="#booking"
-          className="mt-8 inline-block rounded bg-brand-main px-6 py-3 font-medium text-white transition-colors duration-300 hover:bg-brand-main/70 cursor-pointer"
+          className="mt-8 flex items-center justify-center rounded bg-brand-main px-6 py-3 font-medium text-white transition-colors duration-300 hover:bg-brand-main/70 cursor-pointer"
           variants={itemFadeUp}
           whileTap={{ scale: 0.95 }}
         >
           {dict.hero.button}
+          <ArrowRightIcon
+            size={16}
+            className="ml-2 transition-transform group-hover:translate-x-1"
+          />
         </motion.a>
       </motion.div>
 
