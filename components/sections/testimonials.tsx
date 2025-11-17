@@ -45,7 +45,7 @@ const itemFadeIn: Variants = {
 
 export default function TestimonialsSection({ dict }: { dict: Dictionary }) {
   const sectionRef = useRef(null);
-  const isInView = useInView(sectionRef, { once: true, amount: 0.3 });
+  const isInView = useInView(sectionRef, { once: true, amount: 0.2 });
 
   const testimonialsRow1 = dict.testimonials.row1;
   const testimonialsRow2 = dict.testimonials.row2;

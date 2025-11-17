@@ -28,7 +28,7 @@ const itemFadeUp: Variants = {
 
 export const BookingSection = ({ dict }: { dict: Dictionary }) => {
   const sectionRef = useRef(null);
-  const isInView = useInView(sectionRef, { once: true, amount: 0.3 });
+  const isInView = useInView(sectionRef, { once: true, amount: 0.2 });
 
   return (
     <section

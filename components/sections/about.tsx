@@ -37,7 +37,7 @@ const fadeIn: Variants = {
 
 export default function AboutSection({ dict }: { dict: Dictionary }) {
   const sectionRef = useRef(null);
-  const isInView = useInView(sectionRef, { once: true, amount: 0.6 });
+  const isInView = useInView(sectionRef, { once: true, amount: 0.2 });
 
   return (
     <section

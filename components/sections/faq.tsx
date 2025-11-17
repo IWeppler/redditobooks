@@ -89,7 +89,7 @@ const FaqItem = ({
 
 export function FaqSection({ dict }: { dict: Dictionary }) {
   const sectionRef = useRef(null);
-  const isInView = useInView(sectionRef, { once: true, amount: 0.3 });
+  const isInView = useInView(sectionRef, { once: true, amount: 0.2 });
 
   const faqs = dict.faq.items;
 

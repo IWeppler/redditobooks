@@ -42,7 +42,7 @@ const cardVariants: Variants = {
 
 export default function ServicesSection({ dict }: { dict: Dictionary }) {
   const sectionRef = useRef(null);
-  const isInView = useInView(sectionRef, { once: true, amount: 0.6 });
+  const isInView = useInView(sectionRef, { once: true, amount: 0.2 });
 
   return (
     <section
