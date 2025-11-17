@@ -1,63 +1,125 @@
-import Image from "next/image";
-import React from "react";
+"use client";
 
-export default function AboutSection() {
+import Image from "next/image";
+import { motion, useInView, Variants } from "framer-motion";
+import React, { useRef } from "react";
+import { ArrowRightIcon } from "lucide-react";
+import type { Dictionary } from "@/lib/types";
+import Link from "next/link";
+
+const staggerContainer: Variants = {
+  hidden: { opacity: 0 },
+  show: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.2,
+      delayChildren: 0.1,
+    },
+  },
+};
+
+const itemFadeUp: Variants = {
+  hidden: { opacity: 0, y: 30 },
+  show: {
+    opacity: 1,
+    y: 0,
+    transition: { duration: 0.6, ease: "easeOut" },
+  },
+};
+
+const fadeIn: Variants = {
+  hidden: { opacity: 0 },
+  show: {
+    opacity: 1,
+    transition: { duration: 0.8, ease: "easeOut" },
+  },
+};
+
+export default function AboutSection({ dict }: { dict: Dictionary }) {
+  const sectionRef = useRef(null);
+  const isInView = useInView(sectionRef, { once: true, amount: 0.6 });
+
   return (
-    <section className="flex w-full justify-center bg-background">
-      {/* Mantenemos el borde lateral para consistencia con la sección anterior */}
-      <div className="flex w-full max-w-6xl flex-col border-x border-brand-assets lg:flex-row">
-        {/* COLUMNA IZQUIERDA: La Imagen (Sticky para efecto moderno) */}
+    <section
+      ref={sectionRef}
+      className="flex w-full justify-center bg-background border-t border-brand-assets"
+    >
+      <div className="flex w-full max-w-7xl flex-col border-x border-brand-assets lg:flex-row">
+        {/* === COLUMNA IZQUIERDA === */}
         <div className="relative w-full border-b border-brand-assets lg:w-1/2 lg:border-b-0 lg:border-r">
           <div className="sticky top-24 flex h-full min-h-[400px] flex-col justify-between p-8 sm:p-12">
-            {/* Badge de Localización */}
-            <div className="mb-8 flex items-center gap-2 z-20">
-              <div className="h-2 w-2 rounded-full bg-brand-main animate-pulse"></div>
-              <span className="text-xs font-bold uppercase tracking-widest text-white">
-                Based in South Florida
-              </span>
-            </div>
+            <motion.div
+              className="relative z-10"
+              variants={fadeIn}
+              initial="hidden"
+              animate={isInView ? "show" : "hidden"}
+            >
+              {/* Ubicación */}
+              <div className="mb-8 flex items-center gap-2">
+                <div className="h-2 w-2 rounded-full bg-brand-main animate-pulse"></div>
+                <span className="text-xs font-bold uppercase tracking-widest text-white">
+                  {dict.about.left.location}
+                </span>
+              </div>
 
-            {/* Título Visual sobre la imagen */}
-            <div className="relative z-10 mt-auto">
-              <h3 className="font-switzer text-4xl font-bold leading-none text-white lg:text-5xl">
-                Nicolas <br /> & Marcos
-              </h3>
-              <p className="mt-4 max-w-md text-lg text-white/80">
-                Degreed accountants combining big-firm expertise with boutique
-                attention.
-              </p>
-            </div>
+              {/* Nombres & Descripción */}
+              <div className="relative mt-auto">
+                <h3
+                  className="font-switzer text-4xl font-bold leading-none text-white lg:text-5xl"
+                  dangerouslySetInnerHTML={{
+                    __html: dict.about.left.founders.replace("\n", "<br />"),
+                  }}
+                />
+                <p className="mt-4 max-w-md text-lg text-white/80">
+                  {dict.about.left.description}
+                </p>
+              </div>
+            </motion.div>
 
-            <div className="absolute inset-0 z-0 h-full w-full overflow-hidden opacity-40 grayscale transition-all duration-700 hover:grayscale-0">
+            <motion.div
+              className="absolute inset-0 z-0 h-full w-full overflow-hidden grayscale transition-all duration-700 hover:grayscale-0"
+              variants={fadeIn}
+              initial="hidden"
+              animate={isInView ? "show" : "hidden"}
+            >
               <Image
                 src="/redditoteam2.jpg"
                 alt="Founders"
                 fill
                 className="object-cover right-0"
               />
-              <div className="h-full w-full bg-linear-to-t from-background via-background/50 to-transparent" />
-            </div>
+              <div className="absolute inset-0 bg-black/50" />
+              <div className="absolute inset-0 bg-linear-to-t from-black via-black/40 to-transparent" />
+            </motion.div>
           </div>
         </div>
 
-        {/* COLUMNA DERECHA: La Narrativa y los Valores */}
-        <div className="flex w-full flex-col justify-center bg-background lg:w-1/2">
-          {/* Bloque 1: Intro */}
-          <div className="border-b border-brand-assets p-8 sm:p-16">
+        {/* === COLUMNA DERECHA === */}
+        <motion.div
+          className="flex w-full flex-col justify-center bg-background lg:w-1/2"
+          variants={staggerContainer}
+          initial="hidden"
+          animate={isInView ? "show" : "hidden"}
+        >
+          {/* BLOQUE 1 */}
+          <motion.div
+            variants={itemFadeUp}
+            className="border-b border-brand-assets p-8 sm:py-16"
+          >
             <h4 className="mb-6 font-switzer text-2xl font-semibold text-white">
-              Your trusted partners in financial management
+              {dict.about.right.block1.title}
             </h4>
             <p className="leading-relaxed text-gray-400">
-              Founded by Nicolas Torres and Marcos Garro, both seasoned
-              accountants with over 7 years of experience. We decided to break
-              away from the traditional rigid models to build{" "}
-              <strong>Reddito</strong>: a firm dedicated to providing top-notch
-              bookkeeping tailored to your unique needs.
+              {dict.about.right.block1.body}
             </p>
-          </div>
+          </motion.div>
 
-          {/* Bloque 2: Los 3 Iconos (Ahora integrados elegantemente) */}
-          <div className="grid grid-cols-1 sm:grid-cols-2">
+          {/* BLOQUE 2 */}
+          <motion.div
+            variants={itemFadeUp}
+            className="grid grid-cols-1 sm:grid-cols-2"
+          >
+            {/* Icono 1 */}
             <div className="border-b border-brand-assets p-8 border-r sm:border-r-brand-assets">
               <span className="mb-3 block text-brand-main">
                 <svg
@@ -78,14 +140,14 @@ export default function AboutSection() {
                 </svg>
               </span>
               <h5 className="mb-2 font-switzer text-lg font-medium text-white">
-                Personal Touch
+                {dict.about.right.block2.card1.title}
               </h5>
               <p className="text-gray-500">
-                You won&apos;t talk to a bot. You get direct access to a
-                dedicated expert who knows your business.
+                {dict.about.right.block2.card1.body}
               </p>
             </div>
 
+            {/* Icono 2 */}
             <div className="border-b border-brand-assets p-8">
               <span className="mb-3 block text-brand-main">
                 <svg
@@ -104,50 +166,31 @@ export default function AboutSection() {
                 </svg>
               </span>
               <h5 className="mb-2 font-switzer text-lg font-medium text-white">
-                Fast & Experienced
+                {dict.about.right.block2.card2.title}
               </h5>
               <p className="text-gray-500">
-                Over 7 years of specialized industry experience ensuring quick
-                turnarounds and accuracy.
+                {dict.about.right.block2.card2.body}
               </p>
             </div>
-          </div>
+          </motion.div>
 
-          {/* Bloque 3: Tech Stack & Closing */}
-          <div className="p-8 sm:p-16">
+          {/* BLOQUE 3 */}
+          <motion.div variants={itemFadeUp} className="p-8">
             <div className="mb-6 inline-flex items-center gap-2 rounded border border-brand-assets bg-white/5 px-3 py-1 text-xs font-medium text-white">
-              <span>Certified Experts</span>
+              <span>{dict.about.right.block3.badge}</span>
             </div>
-            <p className="mb-6 text-gray-400">
-              Our team’s deep experience with <strong>QuickBooks Online</strong>{" "}
-              ensures you receive top-tier support. We focus on providing
-              reliable, professional support tailored to your unique financial
-              need {" "}
-              <span className="text-white">
-                without the big-firm price tag.
-              </span>
-            </p>
 
-            <a
-              href="/about"
-              className="group inline-flex items-center text-sm font-bold uppercase tracking-widest text-brand-main hover:text-white"
+            <p className="mb-6 text-gray-400">{dict.about.right.block3.body}</p>
+
+            <Link
+              href="#booking"
+              className="group inline-flex items-center text-sm font-semibold uppercase tracking-widest text-brand-main transition-colors duration-300 hover:text-white"
             >
-              More about us
-              <svg
-                className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              >
-                <line x1="5" y1="12" x2="19" y2="12" />
-                <polyline points="12 5 19 12 12 19" />
-              </svg>
-            </a>
-          </div>
-        </div>
+              {dict.about.right.block3.link}
+              <ArrowRightIcon size={16}/>
+            </Link>
+          </motion.div>
+        </motion.div>
       </div>
     </section>
   );

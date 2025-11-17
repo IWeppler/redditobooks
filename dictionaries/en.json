@@ -1,0 +1,213 @@
+{
+  "nav": {
+    "about": "About",
+    "services": "Services",
+    "clients": "Clients",
+    "contact": "Contact Us"
+  },
+  "hero": {
+    "title": "Bookkeeping that drives your Business forward",
+    "subtitle": "At Reddito Books, we simplify your financial management with accuracy and dependability, giving you more time to focus on growing your business.",
+    "button": "Get Started"
+  },
+  "services": {
+    "header": {
+      "title": "Services crafted for",
+      "highlight": "financial clarity.",
+      "subtitle": "Fully customizable for multiple entities & complex needs."
+    },
+
+    "cards": {
+      "bookkeeping": {
+        "title": "Bookkeeping Services",
+        "items": [
+          "Dedicated bookkeeping expert",
+          "Monthly reconciliations & book reports",
+          "Monthly call reviews",
+          "Accounts Receivable & Payable",
+          "Fully customizable Chart of Accounts"
+        ]
+      },
+
+      "payroll": {
+        "title": "Payroll",
+        "items": [
+          "Payroll tax obligations",
+          "W-2s and 1099s management",
+          "Precise Time tracking",
+          "Full-service payroll execution",
+          "Compliance monitoring"
+        ]
+      },
+
+      "cfo": {
+        "title": "Fractional CFO",
+        "items": [
+          "Continuous engagement: Cash flows & Modeling",
+          "Budgeting & Financial Forecasts",
+          "Sales Efficiency Analysis",
+          "Business drivers & KPIs tracking",
+          "Global overview of business strategy"
+        ]
+      }
+    }
+  },
+  "about": {
+    "left": {
+      "location": "Based in South Florida",
+      "founders": "Nicolas \n & Marcos",
+      "description": "Degreed accountants combining big-firm expertise with boutique attention."
+    },
+
+    "right": {
+      "block1": {
+        "title": "Your trusted partners in financial management",
+        "body": "Founded by Nicolas Torres and Marcos Garro, both seasoned accountants with over 7 years of experience. We decided to break away from the traditional rigid models to build Reddito: a firm dedicated to providing top-notch bookkeeping tailored to your unique needs."
+      },
+
+      "block2": {
+        "card1": {
+          "title": "Personal Touch",
+          "body": "You won’t talk to a bot. You get direct access to a dedicated expert who knows your business."
+        },
+        "card2": {
+          "title": "Fast & Experienced",
+          "body": "Over 7 years of specialized industry experience ensuring quick turnarounds and accuracy."
+        }
+      },
+
+      "block3": {
+        "badge": "Certified Experts",
+        "body": "Our team’s deep experience with QuickBooks Online ensures you receive top-tier support. We focus on providing reliable, professional support tailored to your unique financial need without the big-firm price tag.",
+        "link": "More about us"
+      }
+    }
+  },
+  "testimonials": {
+    "title": "Our Clients",
+    "subtitle": "Tangible results — we build efficient bookkeeping pipelines that scale, optimize, and save valuable hours.",
+
+    "row1": [
+      {
+        "quote": "“Reddito Books has been a fantastic partner for managing our business finances. Their team is professional, detail-oriented, and always quick to respond to any questions. They’ve helped streamline our bookkeeping processes, saving us both time and stress.”",
+        "name": "WeHire",
+        "logo": "/wehire.png"
+      },
+      {
+        "quote": "“Reddito Books provide us with a professional and quality service. They have always been very attentive to our needs.”",
+        "name": "Miles Christi",
+        "logo": "/mileschristi.png"
+      },
+      {
+        "quote": "“Since we contacted them, our books are up to date and neat. They work with great dedication.”",
+        "name": "Panorama Estudios",
+        "logo": "/panorama_logo.png"
+      }
+    ],
+
+    "row2": [
+      {
+        "quote": "“Reddito Books has been a great value to our condominium. Their team is reliable, accurate, and keeps our finances organized, making budgeting and reporting much easier for us. We highly recommend their services!”",
+        "name": "Fortune House Condominium",
+        "logo": "/fortune-house-hotel-logo.png"
+      },
+      {
+        "quote": "We would love to have two more testimonials for these cards.",
+        "name": "Sarah Chen",
+        "logo": "/panorama_logo.png"
+      },
+      {
+        "quote": "We would love to have two more testimonials for these cards.",
+        "name": "David Kim",
+        "logo": "/mileschristi.png"
+      }
+    ]
+  },
+  "faq": {
+    "title": "Common Questions",
+    "items": [
+      {
+        "q": "What services do you offer?",
+        "a": "We provide a comprehensive range of services including bookkeeping, financial reporting, payroll management, and CFO advisory services."
+      },
+      {
+        "q": "What types of businesses do you work with?",
+        "a": "We work with a diverse range of clients, including small businesses, corporations, non-profits, and homeowners associations."
+      },
+      {
+        "q": "What is the cost of your services?",
+        "a": "Our fees vary depending on the specific services you require. We offer customized packages tailored to meet the unique needs of each client."
+      },
+      {
+        "q": "How can I switch my accounting to your firm?",
+        "a": "Switching to our firm is simple. We will guide you through the process, including the transfer of financial data and the setup of new systems if needed."
+      },
+      {
+        "q": "Do you offer virtual accounting services?",
+        "a": "Yes, we offer virtual accounting services, allowing us to serve clients regardless of their location through secure online platforms."
+      },
+      {
+        "q": "How often will I receive financial reports?",
+        "a": "We provide financial reports on a schedule that suits your needs, whether that’s monthly, quarterly, or annually."
+      },
+      {
+        "q": "Can you help me set up an accounting system for my new business?",
+        "a": "Yes, we can assist you in selecting and implementing an accounting system tailored to your business needs. This includes setting up a chart of accounts, configuring software, and training your staff."
+      },
+      {
+        "q": "Can you assist with financial forecasting and budgeting?",
+        "a": "Absolutely! We help clients create detailed financial forecasts and budgets, providing insights that support strategic planning and informed decision-making."
+      },
+      {
+        "q": "What measures do you take to ensure timely delivery of services?",
+        "a": "We prioritize efficiency and have structured processes to ensure timely completion of tasks. Our team is committed to meeting deadlines and providing prompt responses."
+      },
+      {
+        "q": "What if I decide to cancel?",
+        "a": "Our services operate on a month-to-month basis, so you can cancel at any time without any fees. Your QuickBooks Online account remains yours, and you can take it with you."
+      }
+    ]
+  },
+  "booking": {
+    "badge": "Ready to start?",
+    "title": {
+      "main": "Expert & Unique",
+      "highlight": "Bookkeeping Solutions."
+    },
+    "description": "Join us at Reddito Books. Let us help you achieve your financial goals with precision, integrity, and dedication.",
+    "points": {
+      "p1": "Free initial consultation",
+      "p2": "Full roadmap provided"
+    },
+    "emailText": "Prefer to email us first?"
+  },
+  "footer": {
+    "brand": {
+      "description": "Bookkeeping that drives your business forward. Expert financial clarity for modern entities in South Florida and beyond."
+    },
+
+    "company": {
+      "title": "Company",
+      "about": "About Us",
+      "services": "Services",
+      "clients": "Clients",
+      "contact": "Contact"
+    },
+
+    "office": {
+      "title": "Office",
+      "phone": "+1 (786)402-9312",
+      "address": "8325 NE 2nd Ave Miami, FL 33138",
+      "area": "South Florida Area"
+    },
+
+    "bottom": {
+      "rights": "All rights reserved."
+    },
+
+    "legal": {
+      "privacy": "Privacy Policy",
+      "terms": "Terms of Service"
+    }
+  }
+}

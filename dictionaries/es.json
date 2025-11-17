@@ -1,0 +1,220 @@
+{
+  "nav": {
+    "about": "Nosotros",
+    "services": "Servicios",
+    "clients": "Clientes",
+    "contact": "Contáctanos"
+  },
+
+  "hero": {
+    "title": "Contabilidad que impulsa tu Negocio hacia adelante",
+    "subtitle": "En Reddito Books, simplificamos tu gestión financiera con precisión y confiabilidad, dándote más tiempo para enfocarte en crecer tu negocio.",
+    "button": "Comenzar"
+  },
+
+  "services": {
+    "header": {
+      "title": "Servicios diseñados para",
+      "highlight": "claridad financiera.",
+      "subtitle": "Totalmente personalizables para múltiples entidades y necesidades complejas."
+    },
+
+    "cards": {
+      "bookkeeping": {
+        "title": "Servicios de Contabilidad",
+        "items": [
+          "Especialista dedicado en contabilidad",
+          "Conciliaciones mensuales y reportes financieros",
+          "Revisiones mensuales por llamada",
+          "Cuentas por cobrar y pagar",
+          "Plan de cuentas totalmente personalizable"
+        ]
+      },
+
+      "payroll": {
+        "title": "Nómina (Payroll)",
+        "items": [
+          "Obligaciones de impuestos sobre la nómina",
+          "Gestión de W-2 y 1099",
+          "Control preciso de horas trabajadas",
+          "Ejecución completa de la nómina",
+          "Monitoreo de cumplimiento"
+        ]
+      },
+
+      "cfo": {
+        "title": "CFO Fraccional",
+        "items": [
+          "Supervisión continua: Flujos de caja y Modelos financieros",
+          "Presupuestos y Pronósticos financieros",
+          "Análisis de eficiencia de ventas",
+          "Seguimiento de impulsores del negocio y KPIs",
+          "Visión estratégica completa del negocio"
+        ]
+      }
+    }
+  },
+
+  "about": {
+    "left": {
+      "location": "Ubicados en el Sur de Florida",
+      "founders": "Nicolás \n & Marcos",
+      "description": "Contadores graduados que combinan experiencia de grandes firmas con una atención boutique."
+    },
+
+    "right": {
+      "block1": {
+        "title": "Tus socios de confianza en gestión financiera",
+        "body": "Fundado por Nicolás Torres y Marcos Garro, ambos contadores con más de 7 años de experiencia. Decidimos romper con los modelos tradicionales para construir Reddito: una firma dedicada a brindar contabilidad de primer nivel adaptada a tus necesidades."
+      },
+
+      "block2": {
+        "card1": {
+          "title": "Atención Personalizada",
+          "body": "Nunca hablarás con un bot. Tenés acceso directo a un experto dedicado que conoce tu negocio."
+        },
+        "card2": {
+          "title": "Rápidos & Experimentados",
+          "body": "Más de 7 años de experiencia especializada que garantizan rapidez y precisión."
+        }
+      },
+
+      "block3": {
+        "badge": "Expertos Certificados",
+        "body": "La profunda experiencia de nuestro equipo con QuickBooks Online garantiza soporte de primer nivel. Nos enfocamos en brindar un servicio confiable y profesional adaptado a tus necesidades financieras, sin los costos de una gran firma.",
+        "link": "Más sobre nosotros"
+      }
+    }
+  },
+
+  "testimonials": {
+    "title": "Nuestros Clientes",
+    "subtitle": "Resultados tangibles — construimos sistemas de contabilidad eficientes que escalan, optimizan y ahorran horas valiosas.",
+
+    "row1": [
+      {
+        "quote": "“Reddito Books ha sido un socio fantástico para gestionar las finanzas de nuestro negocio. Su equipo es profesional, detallista y siempre responde rápido. Nos ayudaron a optimizar nuestra contabilidad, ahorrándonos tiempo y estrés.”",
+        "name": "WeHire",
+        "logo": "/wehire.png"
+      },
+      {
+        "quote": "“Reddito Books nos brinda un servicio profesional y de calidad. Siempre han sido muy atentos a nuestras necesidades.”",
+        "name": "Miles Christi",
+        "logo": "/mileschristi.png"
+      },
+      {
+        "quote": "“Desde que empezamos a trabajar con ellos, nuestros libros están al día y ordenados. Trabajan con gran dedicación.”",
+        "name": "Panorama Estudios",
+        "logo": "/panorama_logo.png"
+      }
+    ],
+
+    "row2": [
+      {
+        "quote": "“Reddito Books ha sido de gran valor para nuestro condominio. Su equipo es confiable, preciso y mantiene nuestras finanzas organizadas, facilitando presupuestos y reportes. ¡Los recomendamos mucho!”",
+        "name": "Fortune House Condominium",
+        "logo": "/fortune-house-hotel-logo.png"
+      },
+      {
+        "quote": "Nos gustaría tener dos testimonios más para estas tarjetas.",
+        "name": "Sarah Chen",
+        "logo": "/panorama_logo.png"
+      },
+      {
+        "quote": "Nos gustaría tener dos testimonios más para estas tarjetas.",
+        "name": "David Kim",
+        "logo": "/mileschristi.png"
+      }
+    ]
+  },
+
+  "faq": {
+    "title": "Preguntas Frecuentes",
+    "items": [
+      {
+        "q": "¿Qué servicios ofrecen?",
+        "a": "Brindamos una amplia gama de servicios que incluyen contabilidad, reportes financieros, gestión de nómina y asesoría CFO."
+      },
+      {
+        "q": "¿Con qué tipos de negocios trabajan?",
+        "a": "Trabajamos con una variedad de clientes, incluyendo pequeñas empresas, corporaciones, organizaciones sin fines de lucro y asociaciones de propietarios."
+      },
+      {
+        "q": "¿Cuál es el costo de sus servicios?",
+        "a": "Nuestros honorarios varían según los servicios que necesites. Ofrecemos paquetes personalizados adaptados a las necesidades de cada cliente."
+      },
+      {
+        "q": "¿Cómo puedo cambiar mi contabilidad a su firma?",
+        "a": "El proceso es sencillo. Te guiamos en la transferencia de datos financieros y la configuración de nuevos sistemas si es necesario."
+      },
+      {
+        "q": "¿Ofrecen servicios de contabilidad virtual?",
+        "a": "Sí, ofrecemos servicios de contabilidad virtual, lo que nos permite trabajar con clientes sin importar su ubicación a través de plataformas seguras."
+      },
+      {
+        "q": "¿Con qué frecuencia recibiré reportes financieros?",
+        "a": "Proveemos reportes según tus necesidades: mensuales, trimestrales o anuales."
+      },
+      {
+        "q": "¿Pueden ayudarme a configurar un sistema contable para mi nuevo negocio?",
+        "a": "Sí, te ayudamos a seleccionar e implementar un sistema contable adaptado a tu negocio, configurando el plan de cuentas, software y capacitando a tu personal."
+      },
+      {
+        "q": "¿Pueden ayudar con proyecciones financieras y presupuestos?",
+        "a": "Por supuesto. Creamos proyecciones detalladas y presupuestos que aportan claridad para planificar estratégicamente."
+      },
+      {
+        "q": "¿Qué medidas toman para garantizar entregas puntuales?",
+        "a": "Priorizamos la eficiencia y contamos con procesos estructurados para cumplir plazos. Nuestro equipo está comprometido con respuestas rápidas y entregas oportunas."
+      },
+      {
+        "q": "¿Qué sucede si decido cancelar?",
+        "a": "Nuestros servicios son mes a mes, por lo que puedes cancelar en cualquier momento sin cargos. Tu cuenta de QuickBooks Online sigue siendo tuya."
+      }
+    ]
+  },
+
+  "booking": {
+    "badge": "¿Listo para comenzar?",
+    "title": {
+      "main": "Soluciones Expertas y Únicas",
+      "highlight": "en Contabilidad."
+    },
+    "description": "Únete a Reddito Books. Te ayudamos a alcanzar tus objetivos financieros con precisión, integridad y dedicación.",
+    "points": {
+      "p1": "Consulta inicial gratuita",
+      "p2": "Plan completo incluido"
+    },
+    "emailText": "¿Preferís escribirnos primero?"
+  },
+
+  "footer": {
+    "brand": {
+      "description": "Contabilidad que impulsa tu negocio hacia adelante. Claridad financiera experta para organizaciones modernas en el Sur de Florida y más allá."
+    },
+
+    "company": {
+      "title": "Compañía",
+      "about": "Nosotros",
+      "services": "Servicios",
+      "clients": "Clientes",
+      "contact": "Contacto"
+    },
+
+    "office": {
+      "title": "Oficina",
+      "phone": "+1 (786)402-9312",
+      "address": "8325 NE 2nd Ave Miami, FL 33138",
+      "area": "Área del Sur de Florida"
+    },
+
+    "bottom": {
+      "rights": "Todos los derechos reservados."
+    },
+
+    "legal": {
+      "privacy": "Política de Privacidad",
+      "terms": "Términos del Servicio"
+    }
+  }
+}
