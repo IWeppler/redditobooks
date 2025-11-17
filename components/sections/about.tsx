@@ -42,6 +42,7 @@ export default function AboutSection({ dict }: { dict: Dictionary }) {
   return (
     <section
       ref={sectionRef}
+      id="about"
       className="flex w-full justify-center bg-background border-t border-brand-assets"
     >
       <div className="flex w-full max-w-7xl flex-col border-x border-brand-assets lg:flex-row">
@@ -182,12 +183,34 @@ export default function AboutSection({ dict }: { dict: Dictionary }) {
 
             <p className="mb-6 text-gray-400">{dict.about.right.block3.body}</p>
 
+            <div className="mb-6 flex flex-col gap-2">
+              <span className="text-[10px] uppercase tracking-widest text-gray-500 font-semibold">
+                Proud Member
+              </span>
+              <Link
+                href="https://m.floridaprofessionals.com/miami/financial-services/reddito-books-llc?from=badge"
+                className="relative h-32 w-32"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <Image
+                  src="/member-badge.png"
+                  alt="Florida Professionals Association"
+                  fill
+                  className="object-contain object-left"
+                />
+              </Link>
+            </div>
+
             <Link
               href="#booking"
               className="group inline-flex items-center text-sm font-semibold uppercase tracking-widest text-brand-main transition-colors duration-300 hover:text-white"
             >
               {dict.about.right.block3.link}
-              <ArrowRightIcon size={16}/>
+              <ArrowRightIcon
+                size={16}
+                className="ml-2 transition-transform group-hover:translate-x-1"
+              />
             </Link>
           </motion.div>
         </motion.div>

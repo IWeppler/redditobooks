@@ -2,7 +2,7 @@ import React from "react";
 
 export default function ContactSection() {
   return (
-    <section className="relative flex w-full justify-center bg-background border-t border-brand-assets">
+    <section id="contact" className="relative flex w-full justify-center bg-background border-t border-brand-assets">
       <div className="mx-auto w-full max-w-7xl border-x border-brand-assets pt-16">
         {/* HEADER */}
         <div className="flex flex-col justify-between gap-8 md:flex-row md:items-end w-full px-6 border-b border-brand-assets pb-8">

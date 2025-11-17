@@ -1,6 +1,5 @@
 import { Suspense } from "react";
 import { getDictionary } from "@/lib/dictionaries";
-// import { Navbar } from "@/components/Navbar";
 import HeroSection from "@/components/sections/hero";
 import ServicesSection from "@/components/sections/services";
 import AboutSection from "@/components/sections/about";

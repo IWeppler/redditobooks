@@ -46,6 +46,7 @@ export default function ServicesSection({ dict }: { dict: Dictionary }) {
 
   return (
     <section
+      id="services"
       ref={sectionRef}
       className="flex w-full flex-col items-center border-t border-brand-assets"
     >

@@ -15,24 +15,21 @@ export const Navbar = ({
   dict: Dictionary;
 }) => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false); // <--- NUEVO ESTADO
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const pathname = usePathname();
 
   const navLinks = [
     { name: dict.nav.about, href: "#about" },
     { name: dict.nav.services, href: "#services" },
-    { name: dict.nav.clients, href: "#clients" },
+    { name: dict.nav.clients, href: "#testimonials" },
   ];
 
   const getLanguageLink = (newLang: "en" | "es") => {
     if (!pathname) return "/";
     const segments = pathname.split("/");
-    // Si estamos en la raíz (ej: /en o /es), segments tendrá 2 elementos ["", "en"]
-    // Si hay más rutas, las mantenemos.
     if (segments.length > 1) {
       segments[1] = newLang;
     } else {
-      // Fallback por seguridad
       return `/${newLang}`;
     }
     return segments.join("/");
@@ -137,7 +134,7 @@ export const Navbar = ({
             {/* CTA BUTTON DESKTOP */}
             <Link
               href="#booking"
-              className="hidden md:block rounded bg-brand-main px-5 py-2 tracking-wider text-white transition-all hover:bg-brand-secondary cursor-pointer"
+              className="hidden md:block rounded bg-brand-main px-5 py-2 tracking-wider text-white transition-all duration-300 hover:bg-brand-main/70 cursor-pointer"
             >
               {dict.nav.contact}
             </Link>

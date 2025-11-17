@@ -44,17 +44,15 @@ const itemFadeIn: Variants = {
 };
 
 export default function TestimonialsSection({ dict }: { dict: Dictionary }) {
-  // 5. Eliminar el hook
-  // const { t } = useTranslation();
   const sectionRef = useRef(null);
   const isInView = useInView(sectionRef, { once: true, amount: 0.3 });
 
-  // 6. Leer los arrays directamente del 'dict'
   const testimonialsRow1 = dict.testimonials.row1;
   const testimonialsRow2 = dict.testimonials.row2;
 
   return (
     <section
+      id="testimonials"
       ref={sectionRef}
       className="w-full bg-background border-t border-brand-assets"
     >
@@ -70,7 +68,6 @@ export default function TestimonialsSection({ dict }: { dict: Dictionary }) {
             variants={itemFadeUp}
             className="font-switzer lg:px-10 text-5xl font-bold text-white md:text-6xl"
           >
-            {/* 7. Usar 'dict' */}
             {dict.testimonials.title}
           </motion.h2>
 
@@ -78,12 +75,10 @@ export default function TestimonialsSection({ dict }: { dict: Dictionary }) {
             variants={itemFadeUp}
             className="max-w-md text-base text-gray-400"
           >
-            {/* 7. Usar 'dict' */}
             {dict.testimonials.subtitle}
           </motion.p>
         </motion.div>
 
-        {/* CAROUSELS */}
         <motion.div
           className="max-w-6xl mx-auto mt-16 flex flex-col gap-4"
           variants={carouselContainer}

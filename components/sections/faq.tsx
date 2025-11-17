@@ -34,7 +34,11 @@ const FaqItem = ({
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <motion.div variants={itemFadeUp} className="border-b border-brand-assets">
+    <motion.div
+      id="faq"
+      variants={itemFadeUp}
+      className="border-b border-brand-assets"
+    >
       <button
         onClick={() => setIsOpen(!isOpen)}
         className="flex w-full items-center justify-between py-4 text-left"

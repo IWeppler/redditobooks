@@ -3,12 +3,10 @@ import Link from "next/link";
 import React from "react";
 import type { Dictionary } from "@/lib/types";
 
-// 1. Aceptar 'dict' como prop
 export const Footer = ({ dict }: { dict: Dictionary }) => {
   return (
     <footer className="w-full border-t border-brand-assets bg-background pt-20 pb-10">
       <div className="mx-auto max-w-7xl px-6 md:px-12">
-        {/* GRID SUPERIOR */}
         <div className="grid grid-cols-1 gap-12 lg:grid-cols-4 lg:gap-8">
           {/* BRAND */}
           <div className="flex flex-col gap-6 lg:col-span-2">
@@ -22,7 +20,6 @@ export const Footer = ({ dict }: { dict: Dictionary }) => {
             </Link>
 
             <p className="max-w-sm text-base text-gray-400 leading-relaxed">
-              {/* 2. Usar 'dict' */}
               {dict.footer.brand.description}
             </p>
 
@@ -33,8 +30,8 @@ export const Footer = ({ dict }: { dict: Dictionary }) => {
                 icon={<LinkedInIcon />}
                 label="LinkedIn"
               />
-              <SocialLink href="#" icon={<InstagramIcon />} label="Instagram" />
-              <SocialLink href="#" icon={<FacebookIcon />} label="Facebook" />
+              <SocialLink href="https://www.instagram.com/marcos_accounting/" icon={<InstagramIcon />} label="Instagram" />
+              <SocialLink href="https://www.facebook.com/redditobooks" icon={<FacebookIcon />} label="Facebook" />
             </div>
           </div>
 
@@ -48,10 +45,10 @@ export const Footer = ({ dict }: { dict: Dictionary }) => {
               <FooterLink href="#services">
                 {dict.footer.company.services}
               </FooterLink>
-              <FooterLink href="#clients">
+              <FooterLink href="#testimonials">
                 {dict.footer.company.clients}
               </FooterLink>
-              <FooterLink href="#contact">
+              <FooterLink href="#booking">
                 {dict.footer.company.contact}
               </FooterLink>
             </ul>
@@ -77,7 +74,6 @@ export const Footer = ({ dict }: { dict: Dictionary }) => {
           </div>
         </div>
 
-        {/* DIVIDER - Corrección de clase */}
         <div className="my-16 h-px w-full bg-linear-to-r from-transparent via-brand-assets to-transparent"></div>
 
         {/* BOTTOM BAR */}
@@ -89,13 +85,10 @@ export const Footer = ({ dict }: { dict: Dictionary }) => {
           </div>
 
           <div className="flex gap-6">
-            <Link
-              href="/privacy"
-              className="hover:text-white transition-colors"
-            >
+            <Link href="#" className="hover:text-white transition-colors">
               {dict.footer.legal.privacy}
             </Link>
-            <Link href="/terms" className="hover:text-white transition-colors">
+            <Link href="#" className="hover:text-white transition-colors">
               {dict.footer.legal.terms}
             </Link>
           </div>
@@ -132,7 +125,7 @@ const SocialLink = ({
   icon: React.ReactNode;
   label: string;
 }) => (
-  <a
+  <Link
     href={href}
     aria-label={label}
     target="_blank"
@@ -140,7 +133,7 @@ const SocialLink = ({
     className="flex h-10 w-10 items-center justify-center rounded-full border border-brand-assets text-gray-400 transition-all hover:border-brand-main hover:bg-brand-main hover:text-white"
   >
     {icon}
-  </a>
+  </Link>
 );
 
 // --- ICONOS SVG ---

@@ -16,8 +16,7 @@ export default function Analytics({
     if (!window.gtag) return;
 
     const url = pathname + searchParams.toString();
-    
-    // Esta función ahora se encarga de TODAS las vistas de página
+
     window.gtag("config", GA_MEASUREMENT_ID, {
       page_path: url,
     });
