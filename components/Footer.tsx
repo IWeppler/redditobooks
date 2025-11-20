@@ -13,7 +13,7 @@ export const Footer = ({ dict }: { dict: Dictionary }) => {
             <Link href="/" className="flex items-center gap-2">
               <Image
                 src="/logowhite.png"
-                alt="logo de reddito"
+                alt="logo de reddito books"
                 height={120}
                 width={120}
               />
@@ -30,8 +30,16 @@ export const Footer = ({ dict }: { dict: Dictionary }) => {
                 icon={<LinkedInIcon />}
                 label="LinkedIn"
               />
-              <SocialLink href="https://www.instagram.com/marcos_accounting/" icon={<InstagramIcon />} label="Instagram" />
-              <SocialLink href="https://www.facebook.com/redditobooks" icon={<FacebookIcon />} label="Facebook" />
+              <SocialLink
+                href="https://www.instagram.com/marcos_accounting/"
+                icon={<InstagramIcon />}
+                label="Instagram"
+              />
+              <SocialLink
+                href="https://www.facebook.com/redditobooks"
+                icon={<FacebookIcon />}
+                label="Facebook"
+              />
             </div>
           </div>
 
