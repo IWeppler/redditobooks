@@ -82,7 +82,9 @@
       "block3": {
         "badge": "Expertos Certificados",
         "body": "La profunda experiencia de nuestro equipo con QuickBooks Online garantiza soporte de primer nivel. Nos enfocamos en brindar un servicio confiable y profesional adaptado a tus necesidades financieras, sin los costos de una gran firma.",
-        "link": "Más sobre nosotros"
+        "link": "Más sobre nosotros",
+        "certified": "Miembros Oficiales",
+        "partners": "Nuestros Aliados"
       }
     }
   },
@@ -116,14 +118,14 @@
         "logo": "/fortune-house-hotel-logo.png"
       },
       {
-        "quote": "Nos gustaría tener dos testimonios más para estas tarjetas.",
-        "name": "Sarah Chen",
-        "logo": "/panorama_logo.png"
+        "quote": "Llevo un año utilizando los servicios de Reddito y estoy encantado con su gestión y profesionalismo. Muy recomendados.",
+        "name": "Andrea Chinnici",
+        "logo": "/testimonial2.png"
       },
       {
-        "quote": "Nos gustaría tener dos testimonios más para estas tarjetas.",
-        "name": "David Kim",
-        "logo": "/mileschristi.png"
+        "quote": "He trabajado con Reddito durante un año y mi experiencia superó mis expectativas. Como una empresa mediana con ganas de crecer, siempre me costó encontrar un contador que no solo se preocupara por los impuestos, sino que también se convierta en parte del equipo y ayude a escalar el negocio. Con Marco (Reddito) hoy puedo decir con orgullo que veo un futuro de crecimiento claro para mi empresa, con números y objetivos precisos.",
+        "name": "Cristian Alonso",
+        "logo": "/testimonial.png"
       }
     ]
   },

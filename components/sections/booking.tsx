@@ -3,7 +3,7 @@
 import { InlineWidget } from "react-calendly";
 import React, { useRef } from "react";
 import { motion, useInView, Variants } from "framer-motion";
-import { CheckIcon } from "lucide-react";
+import { CheckIcon, MapPin } from "lucide-react"; // Agregué el icono MapPin
 import { Dictionary } from "@/lib/types";
 
 const staggerContainer: Variants = {
@@ -95,6 +95,31 @@ export const BookingSection = ({ dict }: { dict: Dictionary }) => {
               info@redditobooks.com
             </a>
           </div>
+
+          {/* --- NUEVO: MAPA INTEGRADO --- */}
+          <div className="mt-12 w-full">
+            <div className="mb-4 flex items-center gap-2 text-white">
+              <MapPin className="text-brand-main" size={20} />
+              <span className="font-medium">
+                Based in 8325 NE 2nd Ave, Miami, FL 33138
+              </span>
+            </div>
+
+            <div className="relative w-full h-64 overflow-hidden rounded-lg border border-brand-assets/50 grayscale-[2] brightness-110 hover:grayscale-0 hover:invert-0 hover:brightness-100 transition-all duration-500">
+              <iframe
+                width="100%"
+                height="100%"
+                id="gmap_canvas"
+                src="https://maps.google.com/maps?q=8325+NE+2nd+Ave,+Miami,+FL+33138&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                style={{ border: 0 }}
+                allowFullScreen={false}
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                className="absolute inset-0"
+              ></iframe>
+            </div>
+            <p className="mt-2 text-xs text-gray-500"></p>
+          </div>
         </motion.div>
 
         {/* DERECHA — Calendly */}
@@ -115,7 +140,6 @@ export const BookingSection = ({ dict }: { dict: Dictionary }) => {
           />
         </motion.div>
       </motion.div>
-
     </section>
   );
 };

@@ -6,7 +6,7 @@
     "contact": "Contact Us"
   },
   "hero": {
-    "title": "Bookkeeping that drives your Business forward",
+    "title": "Bookkeeping and Accounting that scales your business.",
     "subtitle": "At Reddito Books, we simplify your financial management with accuracy and dependability, giving you more time to focus on growing your business.",
     "button": "Get Started"
   },
@@ -79,7 +79,9 @@
       "block3": {
         "badge": "Certified Experts",
         "body": "Our team’s deep experience with QuickBooks Online ensures you receive top-tier support. We focus on providing reliable, professional support tailored to your unique financial need without the big-firm price tag.",
-        "link": "More about us"
+        "link": "More about us",
+        "certified": "Proud member",
+        "partners": "Partnered With"
       }
     }
   },
@@ -112,14 +114,14 @@
         "logo": "/fortune-house-hotel-logo.png"
       },
       {
-        "quote": "We would love to have two more testimonials for these cards.",
-        "name": "Sarah Chen",
-        "logo": "/panorama_logo.png"
+        "quote": "I've been working with Reddito for one year and my experience has exceeded my expectations. As a medium size business with the motivation of growing I've seem to struggle to find the right accountatn that doesn't only worry about Taxes, but who becomes part of the team and helps escalate your business. With Marco (Reddito) I could proudly say today u see a growth in my business future with clear numbers and goals!",
+        "name": "Cristian Alonso",
+        "logo": "/testimonial.png"
       },
       {
-        "quote": "We would love to have two more testimonials for these cards.",
-        "name": "David Kim",
-        "logo": "/mileschristi.png"
+        "quote": "I've been using Reddito's services for a year now, and I'm delghted with their management and professsionalism. Highly recommmended.",
+        "name": "Andrea Chinnici",
+        "logo": "/testimonial2.jpg"
       }
     ]
   },
