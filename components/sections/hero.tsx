@@ -79,7 +79,7 @@ export default function HeroSection({ dict }: { dict: Dictionary }) {
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 1.0, delay: 0.4, ease: "easeOut" }}
       >
-        <Spline scene="https://prod.spline.design/oO0gVwvWumAzpeQZ/scene.splinecode" />
+        <Spline scene="https://prod.spline.design/SUQCY2BgVgTCLiFN/scene.splinecode" />
       </motion.div>
     </main>
   );
